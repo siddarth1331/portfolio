@@ -58,8 +58,8 @@ const Contact = () => {
         transition={{ duration: 0.5, delay: 0.7 }}
         className="text-center mx-w-2xl mx-auto mt-5 mb-12 font-Ovo"
       >
-        A frontend developer focuses on building the user-facing part of
-        websites and web applications
+        I'm a motivated fresher seeking job opportunities, internships. Feel
+        free to reach out!
       </motion.p>
       <motion.form
         initial={{ opacity: 0 }}
