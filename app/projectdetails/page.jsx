@@ -2,6 +2,8 @@
 import React from "react";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { assets } from "@/assets/assets";
+import Image from "next/image";
 
 const ProjectDetailsPage = () => {
   return (
@@ -36,7 +38,16 @@ const ProjectDetailsPage = () => {
         className="max-w-4xl mx-auto space-y-8"
       >
         {/* Project 1 */}
-        <div className="p-6 border border-gray-400 rounded-xl hover:bg-lightHover duration-500 shadow-md hover:-translate-y-1 transition-all">
+        <div className="p-6 border border-gray-400 rounded-xl hover:bg-lightHover duration-500 shadow-md hover:-translate-y-1 transition-all relative">
+          <a
+            href="https://github.com/siddarth1331/portfolio.git"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="absolute top-4 right-4"
+          >
+            <Image src={assets.github} alt="GitHub" width={24} height={24} />
+          </a>
+
           <h3 className="text-xl font-semibold text-gray-800 mb-1">
             Portfolio Website
           </h3>
@@ -51,7 +62,16 @@ const ProjectDetailsPage = () => {
         </div>
 
         {/* Project 2 */}
-        <div className="p-6 border border-gray-400 rounded-xl hover:bg-lightHover duration-500 shadow-md hover:-translate-y-1 transition-all">
+        <div className="p-6 border border-gray-400 rounded-xl hover:bg-lightHover duration-500 shadow-md hover:-translate-y-1 transition-all relative">
+          <a
+            href="https://github.com/siddarth1331/-Estimating-the-stock-keeping-units-using-ml.git"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="absolute top-4 right-4"
+          >
+            <Image src={assets.github} alt="GitHub" width={24} height={24} />
+          </a>
+
           <h3 className="text-xl font-semibold text-gray-800 mb-1">
             Estimating The Stocks Keeping Units Using ML
           </h3>
@@ -68,7 +88,16 @@ const ProjectDetailsPage = () => {
         </div>
 
         {/* Project 3 */}
-        <div className="p-6 border border-gray-400 rounded-xl hover:bg-lightHover duration-500 shadow-md hover:-translate-y-1 transition-all">
+        <div className="p-6 border border-gray-400 rounded-xl hover:bg-lightHover duration-500 shadow-md hover:-translate-y-1 transition-all relative">
+          <a
+            href="https://github.com/siddarth1331/humanpose-estimation.git"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="absolute top-4 right-4"
+          >
+            <Image src={assets.github} alt="GitHub" width={24} height={24} />
+          </a>
+
           <h3 className="text-xl font-semibold text-gray-800 mb-1">
             Human Pose Estimation using Machine Learning
           </h3>
@@ -76,8 +105,7 @@ const ProjectDetailsPage = () => {
           <p className="text-sm text-gray-600">
             Built a web-based pose estimation system using Python and deep
             learning models, integrating OpenPose and Mediapipe with a
-            browser-based frontend. Detected body keypoints with high accuracy
-            for fitness tracking, gesture recognition, and AR.
+            browser-based frontend.
           </p>
           <p className="text-sm text-gray-600">
             Tech Stack: Python, OpenPose, Mediapipe, TensorFlow, Keras, OpenCV,
@@ -85,14 +113,48 @@ const ProjectDetailsPage = () => {
           </p>
         </div>
         {/* Project 4 */}
-        <div className="p-6 border border-gray-400 rounded-xl hover:bg-lightHover duration-500 shadow-md hover:-translate-y-1 transition-all">
-          <h3 className="text-xl font-semibold text-gray-800 mb-1">Ai Agent</h3>
+        <div className="p-6 border border-gray-400 rounded-xl hover:bg-lightHover duration-500 shadow-md hover:-translate-y-1 transition-all relative">
+          <a
+            href="https://github.com/siddarth1331/food-delivery.git"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="absolute top-4 right-4"
+          >
+            <Image src={assets.github} alt="GitHub" width={24} height={24} />
+          </a>
+
+          <h3 className="text-xl font-semibold text-gray-800 mb-1">
+            Food Delivery Website
+          </h3>
+          <p className="text-sm text-gray-600 mb-1">Solo Project, 2025</p>
+          <p className="text-sm text-gray-600">
+            Built a full-stack food management web app using React, Express.js,
+            and MongoDB, enabling users to add, update, and manage food items
+            with image upload and real-time API integration.
+          </p>
+          <p className="text-sm text-gray-600">
+            Tech Stack: React, Express.js, Node.js, MongoDB, Multer, Cloudinary,
+            Tailwind CSS
+          </p>
+        </div>
+
+        {/* Project 5 */}
+        <div className="p-6 border border-gray-400 rounded-xl hover:bg-lightHover duration-500 shadow-md hover:-translate-y-1 transition-all relative">
+          <a
+            href="https://github.com/siddarth1331/ai-agent.git"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="absolute top-4 right-4"
+          >
+            <Image src={assets.github} alt="GitHub" width={24} height={24} />
+          </a>
+
+          <h3 className="text-xl font-semibold text-gray-800 mb-1">AI Agent</h3>
           <p className="text-sm text-gray-600 mb-1">Solo Project, 2025</p>
           <p className="text-sm text-gray-600">
             Developed an intelligent agent using LLMs and browser automation
             (Playwright, Browser-Use) to autonomously interpret and execute
-            tasks. Enabled smart web interaction for research, data extraction,
-            and task automation, leveraging machine learning and NLP.
+            tasks.
           </p>
           <p className="text-sm text-gray-600">
             Tech Stack: Gemini API, Playwright, Browser-Use, LLMs, Python

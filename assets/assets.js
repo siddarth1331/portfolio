@@ -12,6 +12,7 @@ import git from "./git.png";
 import mongodb from "./mongodb.png";
 import right_arrow_white from "./right-arrow-white.png";
 import logo from "./logo.png";
+import stock from "./stock.jpg";
 import logo_dark from "./logo_dark.png";
 import mail_icon from "./mail_icon.png";
 import mail_icon_dark from "./mail_icon_dark.png";
@@ -35,6 +36,9 @@ import close_white from "./close-white.png";
 import web_icon from "./web-icon.png";
 import mobile_icon from "./mobile-icon.png";
 import ui_icon from "./ui-icon.png";
+import pose from "./pose.png";
+import myport from "./myport.jpg";
+import food from "./food.jpg";
 import graphics_icon from "./graphics-icon.png";
 import right_arrow from "./right-arrow.png";
 import send_icon from "./send-icon.png";
@@ -44,6 +48,7 @@ import right_arrow_bold_dark from "./right-arrow-bold-dark.png";
 export const assets = {
   user_image,
   code_icon,
+  pose,
   code_icon_dark,
   edu_icon,
   edu_icon_dark,
@@ -51,7 +56,9 @@ export const assets = {
   project_icon_dark,
   vscode,
   firebase,
+  myport,
   figma,
+  stock,
   git,
   mongodb,
   right_arrow_white,
@@ -64,6 +71,7 @@ export const assets = {
   myimg,
   mylogo,
   mypic,
+  food,
   download_icon,
   hand_icon,
   header_bg_color,
@@ -88,53 +96,24 @@ export const assets = {
 
 export const workData = [
   {
-    title: "Frontend project",
+    title: "Portfolio Website",
     description: "Web Design",
-    bgImage: "/work-1.png",
+    bgImage: "/myport.jpg",
   },
   {
-    title: "Geo based app",
-    description: "Mobile App",
-    bgImage: "/work-2.png",
-  },
-  {
-    title: "Photography site",
+    title: "Food-Delivery project",
     description: "Web Design",
-    bgImage: "/work-3.png",
+    bgImage: "/food.jpg",
   },
   {
-    title: "UI/UX designing",
-    description: "UI/UX Design",
-    bgImage: "/work-4.png",
-  },
-];
-
-export const serviceData = [
-  {
-    icon: assets.web_icon,
-    title: "Web design",
-    description: "Web development is the process of building, programming...",
-    link: "",
+    title: "Human Pose Estimation",
+    description: "web-based pose estimation system",
+    bgImage: "/pose.png",
   },
   {
-    icon: assets.mobile_icon,
-    title: "Mobile app",
-    description:
-      "Mobile app development involves creating software for mobile devices...",
-    link: "",
-  },
-  {
-    icon: assets.ui_icon,
-    title: "UI/UX design",
-    description:
-      "UI/UX design focuses on creating a seamless user experience...",
-    link: "",
-  },
-  {
-    icon: assets.graphics_icon,
-    title: "Graphics design",
-    description: "Creative design solutions to enhance visual communication...",
-    link: "",
+    title: "Estimating Stocks",
+    description: "Machine Learning project",
+    bgImage: "/stock.jpg",
   },
 ];
 

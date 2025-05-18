@@ -4,7 +4,7 @@ import React from "react";
 import { motion } from "framer-motion";
 const Header = () => {
   return (
-    <div className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-4">
+    <div className="w-11/12 max-w-3xl text-center mx-auto h-screen flex flex-col items-center justify-center gap-2 ">
       <motion.div
         initial={{ scale: 0 }}
         whileInView={{ scale: 1 }}
@@ -35,9 +35,8 @@ const Header = () => {
         transition={{ duration: 0.6, delay: 0.7 }}
         className="max-w-2xl mx-auto font-Ovo"
       >
-        I love building intelligent web apps and teaching aspiring developers
-        how to integrate AI into full-stack projects to launch impactful tech
-        careers.
+        I build intelligent web apps and help aspiring developers integrate AI
+        into full-stack projects to launch impactful tech careers.
       </motion.p>
       <div className="flex flex-col sm:flex-row items-center gap-4 mt-4">
         <motion.a
@@ -55,7 +54,7 @@ const Header = () => {
           initial={{ y: 30, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           transition={{ duration: 0.6, delay: 1.2 }}
-          href="/resume.pdf"
+          href="/resume-AI.pdf"
           download
           className="px-10 py-3 border rounded-full border-gray-500 flex items-center gap-2"
         >

@@ -2,6 +2,7 @@ import React from "react";
 import Image from "next/image";
 import { assets, infoList, toolsData } from "@/assets/assets";
 import { motion } from "framer-motion";
+import Link from "next/link";
 
 const About = () => {
   return (
@@ -69,13 +70,13 @@ const About = () => {
                 <h3 className="my-4 font-semibold text-gray-700">{title}</h3>
                 <p className="text-gray-600 text-sm">{description}</p>
                 {title !== "Technical Skills" && (
-                  <a
+                  <Link
                     href={link}
                     className="flex items-center gap-2 text-sm mt-5"
                   >
                     More Details{" "}
                     <Image src={assets.right_arrow} alt="" className="w-4" />
-                  </a>
+                  </Link>
                 )}
               </motion.li>
             ))}
