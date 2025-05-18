@@ -2,7 +2,7 @@ import { assets } from "@/assets/assets";
 import Image from "next/image";
 import React, { useEffect, useRef, useState } from "react";
 
-const Navbar = ({ isDarkMode, setIsDarkMode }) => {
+const Navbar = ({}) => {
   const [isScroll, setIsScroll] = useState(false);
   const sideMenuRef = useRef();
   const openMenu = () => {
@@ -36,7 +36,7 @@ const Navbar = ({ isDarkMode, setIsDarkMode }) => {
       </div>
 
       <nav
-        className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50 ${
+        className={`w-full fixed px-5 lg:px-8 xl:px-[8%] py-4 flex items-center justify-between z-50  ${
           isScroll
             ? "bg-white bg-opacity-50 backdrop-blur-lg shadow-sm dark:bg-darkTheme dark:shadow-white/20"
             : ""
